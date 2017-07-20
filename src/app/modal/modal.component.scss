@@ -1,0 +1,76 @@
+.modal {
+    &-dialog {
+        margin: 13% auto;
+        max-width: 650px;
+        width: 100%;
+    }
+    &-content {
+        padding: 15px;
+        position: relative;
+        button.close {
+            width: 23px;
+            height: 23px;
+            position: absolute;
+            top: -28px;
+            right: -28px;
+            opacity: 1;
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+    &-body {
+        border-bottom: 0;
+        .votewrap {
+            &-img {
+                max-height: 176px;
+                overflow: hidden;
+                position: relative;
+                z-index: 2;
+                &-wrap {
+                    border: solid 1px #F297A7;
+                    position: absolute;
+                    width: 85%;
+                    height: 100%;
+                    top: 15px;
+                    right: 0;
+                    z-index: 1;
+                }
+            }
+            &-fullname {
+                font-family: 'Droid Sans', sans-serif;
+                font-size: 24px;
+                color: #262626;
+            }
+            &-city {
+                color: #7D7D7D;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+            }
+            &-votedetails {
+                color: #292929;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                margin: 15px 0 0;
+                &-head {
+                    color: #474747;
+                    display: block;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                }
+                .emph {
+                    font-size: 16px;
+                    font-weight: 500;
+                    &.candidatecode {                            
+                        color: #E12847;
+                    }
+                }
+            }
+        }
+        hr {
+            border-color: #E12847;
+            margin: 5px 0;
+            max-width: 10%;
+        }
+    }
+} 

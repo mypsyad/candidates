@@ -1,0 +1,29 @@
+<div class="modal-content">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="candidateClose()">
+        <span aria-hidden="true"><img src="./../assets/images/icon-close.svg" alt=""></span>
+    </button>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="votewrap-img">
+                    <img src="./../assets/images/candidates/{{context.candidate.img}}" alt="" width="100%">
+                </div>
+                <div class="votewrap-img-wrap">
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="votewrap-fullname">
+                    {{context.candidate.nick}} {{context.candidate.name}} 
+                </div>
+                <hr>
+                <div class="votewrap-city">
+                    Manila
+                </div>
+                <div class="votewrap-votedetails">
+                    <span class="votewrap-votedetails-head">To vote, text:</span>
+                    <span class="emph candidatecode">MUTYA2017 &lt;space&gt; {{context.candidate.nick}} &lt;space&gt; {{context.candidate.city}}</span> and send to <span class="emph">1234 for Globe subscribers</span> and <span class="emph">5678 for Smart or Sun subscribers</span> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

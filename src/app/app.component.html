@@ -1,0 +1,65 @@
+<div class="container maxWidth-900">
+
+    <header class="mp-header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <img alt="Mutya ng Pilipinas 2017" src="./../assets/images/img-logo-header.svg" class="img-responsive mp-header-img">
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mp-vote-box">
+                    <div class="mp-vote-header">Vote via SMS</div>
+                    <div>
+                        To vote, text <span class="emph">MUTYA2017 &lt;space&gt; Candidate Name &lt;space&gt; Manila</span>                        and send to <span class="emph">1234 for Globe subscribers</span> and <span class="emph">5678 for Smart or Sun subscribers.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-3 mp-candidates" *ngFor="let candidate of candidates">
+            <a href="" data-toggle="modal" (click)="CandidateModal(candidate)">
+                <div class="mp-candidate-wrap">
+                    <div class="mp-candidate-img">
+                        <img src="./../assets/images/candidates/{{ candidate.img }}" alt="{{ candidate.nick }} {{ candidate.name }}" class="img-responsive">
+                    </div>
+                    <div class="mp-candidate-votes">
+                        {{ candidate.votes }} Votes
+                    </div>
+                    <div class="mp-candidate-details">
+                        <div class="mp-candidate-nickname">
+                            {{ candidate.nick }}
+                        </div>
+                        <div class="mp-candidate-fullname">
+                            {{ candidate.name }}
+                        </div>
+                        <div class="mp-candidate-city">
+                            {{ candidate.city }}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<footer class="mp-footer">
+    <div class="mp-footer-img">
+        <img src="./../assets/images/img-logo-footer.svg" alt="">
+    </div>
+    <ul class="mp-footer-ul">
+        <a href="">
+            <li><img src="./../assets/images/icon-fb.svg" alt=""></li>
+        </a>
+        <a href="">
+            <li><img src="./../assets/images/icon-twitter.svg" alt=""></li>
+        </a>
+        <a href="">
+            <li><img src="./../assets/images/icon-instagram.svg" alt=""></li>
+        </a>
+    </ul>
+</footer>
